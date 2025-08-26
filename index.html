@@ -1,0 +1,223 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krinal Chudasama - Portfolio</title>
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: linear-gradient(135deg, #ece9e6, #ffffff);
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* Navbar */
+      nav {
+        position: sticky;
+        top: 0;
+        background: #4a90e2;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #ffd700;
+      }
+
+      /* Header */
+      header {
+        text-align: center;
+        padding: 3rem 1rem;
+        background: linear-gradient(135deg, #4a90e2, #357abd);
+        color: white;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      header .img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 3px solid white;
+        margin-bottom: 1rem;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      header .img:hover {
+        transform: scale(1.1);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        font-style: italic;
+      }
+
+      /* Sections */
+      section {
+        padding: 3rem 2rem;
+        max-width: 900px;
+        margin: auto;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 1s forwards;
+      }
+
+      section:nth-child(odd) {
+        background: #f9f9f9;
+        border-radius: 10px;
+      }
+
+      section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #4a90e2;
+        border-left: 5px solid #4a90e2;
+        padding-left: 10px;
+      }
+
+      .about p {
+        font-size: 1.2rem;
+      }
+
+      .skills ul, 
+      .projects ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+
+      .skills li, 
+      .projects li {
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+        transition: transform 0.3s, color 0.3s;
+      }
+
+      .skills li:hover, 
+      .projects li:hover {
+        transform: translateX(8px);
+        color: #4a90e2;
+      }
+
+      /* Contact */
+      .contact p {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .contact a {
+        color: #4a90e2;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .contact a:hover {
+        color: #ff6600;
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background: #4a90e2;
+        color: white;
+        margin-top: 2rem;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.9);}
+        to { opacity: 1; transform: scale(1);}
+      }
+
+      @keyframes fadeUp {
+        to { opacity: 1; transform: translateY(0);}
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <img src="img01.jpg" alt="Portfolio" class="img">
+      <h1>Krinal Chudasama</h1>
+      <p>Student || Learner</p>
+      <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    </header>
+
+    <!-- Header -->
+    
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>A motivated BCA student with a strong interest in computer. I am eager always ready to learn New Things. I am a Computer Science student passionate about web development, coding, and solving real-world problems through technology.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+      <li> Computer Operator</li>
+  <li>Communication</li>
+  <li>HTML, CSS, PHP Coding</li>
+  <li>Planning</li>
+  <li>Developing</li>
+  <li>Differentiated Instruction</li>
+  <li>Team Collaboration</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Portfolio Website</li>
+        <li>To-Do List App</li>
+        <li>Weather App</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:krinal@example.com">krinalchudasama2205@gmail.com</a></p>
+      <p>GitHub: <a href="#">github.com/krinal001</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Krinal Chudasama</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+  </html>
